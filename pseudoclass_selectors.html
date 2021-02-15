@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>pseuudo lass selectors</title>
+<meta charset="utf-8">
+<style>
+	header li{
+		list-style: none;
+	}
+	a:link,a:visited{
+		text-decoration: none; 
+		background-color: red;
+		border: 2px solid black;
+		color: black;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-bottom: 1px;
+	}
+	a:hover,a:active{
+		background-color: purple;
+		color: blue;
+	}
+	header li:nth-child(3){
+  		font-size: 20px;	
+	}
+	section div:nth-child(odd){
+		background-color: gray;
+	}
+	section div:nth-child(2):hover{
+		background-color: blue;
+		cursor:pointer;
+	}
+</style>
+</head> 
+<body>
+<h1>Pseudo class selectors</h1>	
+<header>
+   <u1>
+   	   <li><a href="/">HOME</a></li>
+   	   <li><a href="https://www.youtube.com/"
+   	   	 target="_blank">YOUTUBE</a></li>
+   	   	<li><a href="https://www.coursera.org/"
+   	   	 target="_blank">Coursera</a></li>
+   	</u1>
+</header>
+
+<section>
+	<div>DIV 1</div>
+	<div>DIV 2</div>
+	<div>DIV 3</div>
+</section>
+<footer>footer tag</footer>
+</body> 
+</html>
